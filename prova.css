@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue-blur-bg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left:0;
+    top:0;
+    background: red;
+    /* Blur - 320 */
+}

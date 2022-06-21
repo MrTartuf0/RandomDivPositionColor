@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prova.css">
+    <title>Prova</title>
+</head>
+<body>
+    
+    <div class="blue-blur-bg">
+        ciao
+    </div>
+
+    <script defer>
+
+        for(let i=0 ; i<100 ; i++){
+            let randomColor = Math.floor(Math.random()*360);
+            document.querySelector(".blue-blur-bg").style.backgroundColor = `hsl(${randomColor} , 100% , 50%)`
+            
+            let element = document.createElement('div');
+            e.innerHTML = 'JavaScript DOM';
+        }
+        
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+
+    </script>
+
+</body>
+</html>
