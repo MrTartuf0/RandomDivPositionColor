@@ -9,18 +9,24 @@
 </head>
 <body>
     
-    <div class="blue-blur-bg">
-        ciao
+    
+    <div class="flex-container">
+        <div class="blue-blur-bg">
+            ciao
+        </div>
     </div>
 
     <script defer>
 
-        for(let i=0 ; i<100 ; i++){
+        for(let i=0 ; i<2000 ; i++){
             let randomColor = Math.floor(Math.random()*360);
-            document.querySelector(".blue-blur-bg").style.backgroundColor = `hsl(${randomColor} , 100% , 50%)`
             
-            let element = document.createElement('div');
-            e.innerHTML = 'JavaScript DOM';
+            
+            let box = document.createElement('div');
+            box.innerHTML = `Ciao ${i}`;
+            box.classList.add("blue-blur-bg");
+            box.style.backgroundColor = `hsl(${randomColor} , 100% , 50%)`;
+            document.querySelector(".flex-container").appendChild(box);
         }
         
         console.log(window.innerWidth);
