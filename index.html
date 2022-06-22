@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>404</title>
+    <link rel="stylesheet" href="prova.css">
+    <title>Prova</title>
 </head>
 <body>
-
-    <div class="center">
-        
+    
+    
+    <div class="flex-container">
+        <div class="blue-blur-bg">
+            ciao
+        </div>
     </div>
+
+    <script defer>
+
+        for(let i=0 ; i<5000 ; i++){
+            let randomColor = Math.floor(Math.random()*360);
+            
+            let box = document.createElement('div');
+            box.innerHTML = `Ciao ${i}`;
+            box.classList.add("blue-blur-bg");
+            box.style.backgroundColor = `hsl(${randomColor} , 100% , 50%)`;
+            box.style.transform = `matrix(${(Math.random()*5.0)-2.5},${(Math.random()*5.0)-2.5},${(Math.random()*5.0)-2.5},${(Math.random()*5.0)-2.5},${(Math.random()*5.0)-2.5},${(Math.random()*5.0)-2.5})`
+            document.querySelector(".flex-container").appendChild(box);
+        }
+        
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+
+
+
+    </script>
 
 </body>
 </html>
